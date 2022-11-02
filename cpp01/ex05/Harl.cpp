@@ -6,7 +6,7 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 11:19:30 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/11/02 12:57:10 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/11/02 13:09:49 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ Harl::~Harl()
 
 void	Harl::complain( std::string level )
 {
-	int i = std::string("debug  info   warningerror  ").find(level);
+	int i = std::string("DEBUG  INFO   WARNINGERROR  ").find(level);
 	if (i==-1)
 	{
 		std::cout << "Unknown level of complaint" << std::endl;
