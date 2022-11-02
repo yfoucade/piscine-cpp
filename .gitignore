@@ -2,6 +2,7 @@
 *.o
 test
 test.*
+*.replace
 megaphone
 phonebook
 global_banksters
