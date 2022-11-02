@@ -6,7 +6,7 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 15:22:18 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/11/02 17:29:28 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/11/02 17:44:19 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,12 +64,7 @@ Fixed::Fixed( float const value)
 
 float Fixed::toFloat( void ) const
 {
-	float	res;
-	int		fract_repr;
-
-	res = this->_value >> this->_point_pos;
-	res += float(this->_value & ((1 << this->_point_pos) - 1)) / (1 << this->_point_pos);
-	return (res);
+	return (this->_value / float(1 << this->_point_pos));
 }
 
 int Fixed::toInt( void ) const
