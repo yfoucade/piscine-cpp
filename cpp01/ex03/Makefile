@@ -12,7 +12,10 @@ ${NAME}: ${OBJ}
 	${CC} ${CFLAGS} -o ${NAME} ${OBJ}
 
 %.o: %.cpp %.hpp
-	${CC} -c $<
+	${CC} ${CFLAGS} -c $<
+
+%.o: %.cpp
+	${CC} ${CFLAGS} -c $<
 
 clean:
 	${RM} ${OBJ}
