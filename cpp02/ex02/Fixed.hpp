@@ -6,7 +6,7 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 15:21:28 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/11/04 01:12:24 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/11/04 12:31:04 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@ public:
 	Fixed( float const value);
 	float toFloat( void ) const;
 	int toInt( void ) const;
+	/* Friend keyword is forbidden */
 	friend std::ostream & operator << (std::ostream &out, const Fixed &fixed);
 	/* ex02 */
 	/* REMOVE DEFINITIONS FROM THIS FILE */
