@@ -6,7 +6,7 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 15:21:28 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/11/03 00:05:17 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/11/04 01:12:24 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ public:
 	int toInt( void ) const;
 	friend std::ostream & operator << (std::ostream &out, const Fixed &fixed);
 	/* ex02 */
+	/* REMOVE DEFINITIONS FROM THIS FILE */
 	bool operator< ( const Fixed& other ) const { return this->_value <  other.getRawBits(); }
 	bool operator> ( const Fixed& other ) const { return this->_value >  other.getRawBits(); }
 	bool operator<=( const Fixed& other ) const { return this->_value <= other.getRawBits(); }
