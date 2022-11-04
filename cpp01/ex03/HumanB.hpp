@@ -6,7 +6,7 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 10:35:33 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/11/01 12:02:55 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/11/04 14:48:34 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@
 class HumanB
 {
 	private:
-		Weapon*		_weapon;
 		std::string	_name;
+		Weapon*		_weapon;
 
 	public:
 		HumanB( std::string name );

@@ -6,7 +6,7 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 10:30:11 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/11/01 11:53:25 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/11/04 14:48:18 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@
 class HumanA
 {
 	private:
-		Weapon&		_weapon;
 		std::string	_name;
+		Weapon&		_weapon;
 
 	public:
 		HumanA( std::string name, Weapon& weapon );
