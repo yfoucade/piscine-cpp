@@ -11,8 +11,8 @@ all: ${NAME}
 ${NAME}: ${OBJ}
 	${CC} ${CFLAGS} -o ${NAME} ${OBJ}
 
-%.o: %.cpp %.hpp
-	${CC} -c $<
+%.o: %.cpp
+	${CC} ${CFLAGS} -c $<
 
 clean:
 	${RM} ${OBJ}
