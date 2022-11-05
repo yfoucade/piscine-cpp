@@ -6,14 +6,14 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 15:32:37 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/11/02 15:33:29 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/11/05 13:37:21 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include "Fixed.hpp"
 
-int	main(int ac, char **av)
+int	main( void )
 {
 	Fixed a;
 	Fixed b( a );
