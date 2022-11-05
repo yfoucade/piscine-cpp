@@ -6,7 +6,7 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 11:19:30 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/11/02 13:44:55 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/11/05 13:27:17 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,10 @@
 
 Harl::Harl( void )
 {
+	mem_fun_ptr[0] = &Harl::debug;
+	mem_fun_ptr[1] = &Harl::info;
+	mem_fun_ptr[2] = &Harl::warning;
+	mem_fun_ptr[3] = &Harl::error;
 }
 
 Harl::~Harl()
