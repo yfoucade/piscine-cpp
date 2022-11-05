@@ -6,7 +6,7 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 15:22:18 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/11/03 00:06:37 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/11/05 22:22:45 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,6 +74,66 @@ std::ostream & operator << (std::ostream &out, const Fixed &fixed)
 
 /* ex02 */
 
+bool Fixed::operator< ( const Fixed& other ) const
+{
+	return this->_value <  other.getRawBits();
+}
+
+bool Fixed::operator> ( const Fixed& other ) const
+{
+	return this->_value >  other.getRawBits();
+}
+
+bool Fixed::operator<=( const Fixed& other ) const
+{
+	return this->_value <= other.getRawBits();
+}
+
+bool Fixed::operator>=( const Fixed& other ) const
+{
+	return this->_value >= other.getRawBits();
+}
+
+bool Fixed::operator==( const Fixed& other ) const
+{
+	return this->_value == other.getRawBits();
+}
+
+bool Fixed::operator!=( const Fixed& other ) const
+{
+	return this->_value != other.getRawBits();
+}
+
+Fixed Fixed::operator+( const Fixed& other ) const
+{
+	return Fixed(this->_value + other.getRawBits());
+}
+
+Fixed Fixed::operator-( const Fixed& other ) const
+{
+	return Fixed(this->_value - other.getRawBits());
+}
+
+Fixed& Fixed::operator++( void )
+{
+	++this->_value; return *this;
+}
+
+Fixed Fixed::operator++( int )
+{
+	Fixed old = *this; ++this->_value; return old;
+}
+
+Fixed& Fixed::operator--( void )
+{
+	--this->_value; return *this;
+}
+
+Fixed Fixed::operator--( int )
+{
+	Fixed old = *this; --this->_value; return old;
+}
+
 Fixed Fixed::operator*( const Fixed& other ) const 
 {
 	return Fixed(this->toFloat() * other.toFloat());
@@ -82,4 +142,32 @@ Fixed Fixed::operator*( const Fixed& other ) const
 Fixed Fixed::operator/( const Fixed& other ) const
 {
 	return Fixed(this->toFloat() / other.toFloat());
+}
+
+Fixed& Fixed::min( Fixed& a, Fixed &b )
+{
+	if (a <= b)
+		return a;
+	return b;
+}
+
+Fixed& Fixed::max( Fixed& a, Fixed &b )
+{
+	if (a >= b)
+		return a;
+	return b;
+}
+
+const Fixed& Fixed::min( const Fixed& a, const Fixed &b )
+{
+	if (a <= b)
+		return a;
+	return b;
+}
+
+const Fixed& Fixed::max( const Fixed& a, const Fixed &b )
+{
+	if (a >= b)
+		return a;
+	return b;
 }
