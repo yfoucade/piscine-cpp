@@ -6,7 +6,7 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 11:19:30 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/11/04 13:23:13 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/11/05 13:29:17 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,15 +34,15 @@ void	Harl::complain( std::string min_level, std::string level )
 		case 0:
 			if (level == "DEBUG")
 				this->debug();
-				__attribute__ ((fallthrough));
+			__attribute__ ((fallthrough));
 		case 1:
 			if (level == "INFO")
 				this->info();
-				__attribute__ ((fallthrough));
+			__attribute__ ((fallthrough));
 		case 2:
 			if (level == "WARNING")
 				this->warning();
-				__attribute__ ((fallthrough));
+			__attribute__ ((fallthrough));
 		case 3:
 			if (level == "ERROR")
 				this->error();
