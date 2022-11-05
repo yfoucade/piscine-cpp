@@ -6,7 +6,7 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 17:27:27 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/11/02 11:15:32 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/11/05 13:18:01 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ std::string	get_content( std::ifstream& ifs )
 	std::string	res;
 	char		c;
 	
-	while (c = ifs.get())
+	while ((c = ifs.get()))
 	{
 		if (!ifs)
 			break ;
@@ -59,25 +59,25 @@ int	main( int ac, char **av)
 	if (ac != 4)
 	{
 		std::cout << "Usage: sifl filename s1 s2" << std::endl;
-		return (EXIT_FAILURE);
+		return (1);
 	}
 	if (!av[2][0])
 	{
 		std::cout << "Error: s1 cannot be the empty string" << std::endl;
-		return (EXIT_FAILURE);
+		return (1);
 	}
 	std::ifstream	ifs(av[1]);
 	if (!ifs)
 	{
 		std::cout << "Error: could not open file " << av[1] << std::endl;
-		return (EXIT_FAILURE);
+		return (1);
 	}
-	std::ofstream	ofs(std::string(av[1]) + ".replace");
+	std::ofstream	ofs((std::string(av[1]) + ".replace").data());
 	if (!ofs)
 	{
 		std::cout << "Error: could not open file " << av[1] << ".replace" << std::endl;
-		return (EXIT_FAILURE);
+		return (1);
 	}
 	ft_replace(ifs, ofs, av[2], av[3]);
-	return (EXIT_SUCCESS);
+	return (0);
 }
