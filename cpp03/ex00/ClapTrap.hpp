@@ -6,7 +6,7 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 14:54:12 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/11/03 20:55:58 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/11/06 15:32:35 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@ class ClapTrap
 {
 private:
 	std::string _name;
-	int			_hit_points = 10;
-	int			_energy_points = 10;
-	int			_attack_damage = 0;
+	int			_hit_points;
+	int			_energy_points;
+	int			_attack_damage;
 	ClapTrap( void );
 
 public:
