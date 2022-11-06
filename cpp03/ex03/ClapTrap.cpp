@@ -6,7 +6,7 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 14:55:12 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/11/04 00:01:05 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/11/06 15:42:45 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ ClapTrap::ClapTrap( void )
 {
 }
 
-ClapTrap::ClapTrap( std::string name ): _name(name)
+ClapTrap::ClapTrap( std::string name ): _name(name), _hit_points(10), _energy_points(10), _attack_damage(0)
 {
 	std::cout << "ClapTrap called constructor from string for " << name << std::endl;
 }
