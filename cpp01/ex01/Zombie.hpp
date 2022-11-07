@@ -6,14 +6,13 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 15:38:55 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/10/31 16:17:06 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/11/07 15:36:13 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef ZOMBIE_HPP
 # define ZOMBIE_HPP
 
-# include <iostream>
 # include <string>
 
 class Zombie

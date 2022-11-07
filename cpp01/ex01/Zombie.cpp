@@ -6,10 +6,11 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 15:39:55 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/10/31 16:17:41 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/11/07 15:36:48 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <iostream>
 #include "Zombie.hpp"
 
 Zombie::Zombie( std::string name ): _name(name)
