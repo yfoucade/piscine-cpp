@@ -6,7 +6,7 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 14:55:12 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/11/06 15:32:57 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/11/07 18:48:16 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 ClapTrap::ClapTrap( void )
 {
+	std::cout << "ClapTrap default constructor called" << std::endl;
 }
 
 ClapTrap::ClapTrap( std::string name ): _name(name), _hit_points(10), _energy_points(10), _attack_damage(0)
@@ -56,7 +57,7 @@ void ClapTrap::attack( ClapTrap& target )
 {
 	if (this->_energy_points && this->_hit_points && target._hit_points)
 	{
-		std::cout << "ClapTrap " << this->_name << " attacks " << target._name << ", dealing "\
+		std::cout << "ClapTrap " << this->_name << " attacks " << target._name << ", causing "\
 			<< this->_attack_damage << " points of damage!" << std::endl;
 		--this->_energy_points;
 		target.takeDamage(this->_attack_damage);
@@ -75,6 +76,7 @@ void ClapTrap::beRepaired( unsigned int amount )
 	if (this->_energy_points && this->_hit_points)
 	{
 		this->_hit_points += amount;
+		this->_energy_points--;
 		std::cout << "ClapTrap " << this->_name << " has been repaired. It now has "\
 			<< this->_hit_points << " hit points." << std::endl;
 	}
