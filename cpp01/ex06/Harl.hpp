@@ -6,7 +6,7 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 11:18:46 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/11/02 13:58:00 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/11/07 16:00:37 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ class Harl
 	public:
 		Harl( void );
 		~Harl();
-		void complain( std::string min_level, std::string level );
+		void complain( std::string min_level );
 };
 
 #endif /* HARL_HPP */
