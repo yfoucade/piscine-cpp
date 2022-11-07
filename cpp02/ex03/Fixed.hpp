@@ -6,7 +6,7 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 15:21:28 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/11/05 23:09:54 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/11/07 18:27:01 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ class Fixed
 {
 	private:
 		int					_value;
-		static const int	_point_pos = 8;
+		static const int	_point_pos;
 
 	public:
 		/* ex00 */

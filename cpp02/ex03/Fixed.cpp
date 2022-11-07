@@ -6,7 +6,7 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 15:22:18 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/11/05 22:22:45 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/11/07 18:27:06 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 #include "Fixed.hpp"
 
 /* ex00 */
+
+const int Fixed::_point_pos = 8;
 
 Fixed::Fixed( void ): _value(0)
 {
