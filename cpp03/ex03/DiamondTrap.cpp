@@ -6,7 +6,7 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 22:36:38 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/11/04 01:10:14 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/11/07 19:08:54 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,6 @@ DiamondTrap::DiamondTrap( const DiamondTrap & other ): ClapTrap(other), ScavTrap
 {
 	std::cout << "DiamondTrap copy constructor for " << other.get_name() << std::endl;
 	this->_name = other._name;
-	// set_hit_points(other.get_hit_points());
-	// set_energy_points(other.get_energy_points());
-	// set_attack_damage(other.get_attack_damage());
 }
 
 DiamondTrap& DiamondTrap::operator=(const DiamondTrap & other )
