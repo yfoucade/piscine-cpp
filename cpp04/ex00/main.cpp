@@ -6,7 +6,7 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 10:52:32 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/11/11 00:40:40 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/11/11 00:52:00 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,5 +69,7 @@ int main()
 	delete meta;
 	delete i;
 	delete j;
+	delete meta2;
+	delete i2;
 	return 0;
 }
