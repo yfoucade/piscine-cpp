@@ -6,7 +6,7 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 22:36:38 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/11/07 19:08:54 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/11/10 08:25:01 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,7 @@ DiamondTrap& DiamondTrap::operator=(const DiamondTrap & other )
 
 DiamondTrap::~DiamondTrap()
 {
+	std::cout << "DiamondTrap destructor called for " << this->_name << std::endl;
 }
 
 void DiamondTrap::whoAmI( void )
