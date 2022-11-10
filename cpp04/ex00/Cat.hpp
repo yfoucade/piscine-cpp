@@ -6,7 +6,7 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 11:20:11 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/11/07 11:28:21 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/11/11 00:40:17 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,9 @@ class Cat: public Animal
 
 	public:
 		Cat( void );
-		Cat( std::string type );
 		Cat( const Cat& other );
 		Cat& operator=( const Cat& other );
-		~Cat( void );
+		virtual ~Cat( void );
 		void makeSound( void ) const;
 };
 

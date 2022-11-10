@@ -6,7 +6,7 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 11:05:24 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/11/07 11:28:23 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/11/11 00:40:29 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ class Dog: public Animal
 		Dog( std::string type );
 		Dog( const Dog& other );
 		Dog& operator=( const Dog& other );
-		~Dog( void );
+		virtual ~Dog( void );
 		void makeSound( void ) const;
 };
 

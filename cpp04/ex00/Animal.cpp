@@ -6,7 +6,7 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 10:59:39 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/11/07 11:14:24 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/11/11 00:36:29 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,37 +15,34 @@
 
 Animal::Animal( void ): _type(std::string("Generic animal"))
 {
+	std::cout << "Animal default constructor called" << std::endl;
 }
 
 Animal::Animal( std::string type ): _type(type)
 {
+	std::cout << "Animal constructor from string called" << std::endl;
 }
 
-Animal::Animal( const Animal & other ): _type(other.getType())
+Animal::Animal( const Animal & other ): _type(other._type)
 {
+	std::cout << "Animal copy constructor called" << std::endl;
 }
 
 Animal& Animal::operator=( const Animal & other )
 {
-	this->_type = other.getType();
+	std::cout << "Animal assignment operator called" << std::endl;
+	if ( this == &other )
+		return *this;
+	this->_type = other._type;
 	return *this;
 }
 
 Animal::~Animal( void )
 {
-}
-
-std::string Animal::getType( void ) const
-{
-	return this->_type;
-}
-
-void Animal::setType( std::string type )
-{
-	this->_type = type;
+	std::cout << "Animal destructor called" << std::endl;
 }
 
 void Animal::makeSound( void ) const
 {
-	std::cout << "Generic animal sound" << std::endl;
+	std::cout << _type << ": Generic animal sound" << std::endl;
 }
