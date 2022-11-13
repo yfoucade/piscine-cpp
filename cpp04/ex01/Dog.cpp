@@ -6,36 +6,38 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 11:08:28 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/11/07 11:19:01 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/11/12 12:18:37 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include "Dog.hpp"
 
-Dog::Dog( void ): Animal("Dog")
+Dog::Dog( void ): Animal("Dog"), _brain(new Brain)
 {
-}
-
-Dog::Dog( std::string type ): Animal(type)
-{
+	std::cout << "Dog default constructor called" << std::endl;
 }
 
 Dog::Dog( const Dog& other ): Animal(other)
 {
+	std::cout << "Dog copy constructor called" << std::endl;
 }
 
 Dog& Dog::operator=( const Dog& other )
 {
-	setType(other.getType());
+	std::cout << "Dog assignment operator called" << std::endl;
+	if ( this == &other )
+		return *this;
+	this->_type = other._type;
 	return *this;
 }
 
 Dog::~Dog()
 {
+	std::cout << "Dog destructor called" << std::endl;
 }
 
 void Dog::makeSound( void ) const
 {
-	std::cout << "woof!" << std::endl;
+	std::cout << _type << ": woof!" << std::endl;
 }

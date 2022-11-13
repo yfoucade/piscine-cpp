@@ -6,7 +6,7 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 11:05:24 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/11/07 11:28:23 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/11/12 12:18:30 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,17 +15,19 @@
 
 #include <string.h>
 #include "Animal.hpp"
+#include "Brain.hpp"
 
 class Dog: public Animal
 {
 	private:
+		Brain*	_brain;
 
 	public:
 		Dog( void );
 		Dog( std::string type );
 		Dog( const Dog& other );
 		Dog& operator=( const Dog& other );
-		~Dog( void );
+		virtual ~Dog( void );
 		void makeSound( void ) const;
 };
 

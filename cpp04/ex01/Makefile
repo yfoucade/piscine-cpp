@@ -1,7 +1,7 @@
 CC = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98
-NAME = diamondtrap
-SRC = Animal.cpp Dog.cpp Cat.cpp WrongAnimal.cpp WrongCat.cpp main.cpp
+NAME = brain
+SRC = Animal.cpp Brain.cpp Cat.cpp Dog.cpp main.cpp
 OBJ = ${SRC:.cpp=.o}
 
 .PHONY: all clean fclean re
