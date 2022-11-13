@@ -6,7 +6,7 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 11:08:28 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/11/12 12:18:37 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/11/13 22:39:44 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 Dog::Dog( void ): Animal("Dog"), _brain(new Brain)
 {
-	std::cout << "Dog default constructor called" << std::endl;
+	std::cout << _type << " default constructor called" << std::endl;
 }
 
 Dog::Dog( const Dog& other ): Animal(other)

@@ -6,7 +6,7 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 11:20:48 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/11/13 20:56:10 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/11/13 22:43:08 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,14 +48,12 @@ void Cat::makeSound( void ) const
 
 void Cat::printIdeas( void ) const
 {
-	for (int i = 0; i < _nb_ideas; i++)
-		std::cout << i << ": " << (*_brain)[i] << std::endl;
-	std::cout << std::endl;
+	_brain->printIdeas();
 }
 
-void Cat::addIdea( std::string idea ) 
+void Cat::addIdea( int i, std::string idea ) 
 {
-	(*_brain)[_nb_ideas++ % 100] = idea;
+	_brain->addIdea(i, idea);
 }
 
 std::string Cat::popIdea( void )

@@ -6,7 +6,7 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 10:52:32 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/11/13 20:58:43 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/11/13 22:43:41 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,9 @@ int main()
 
 	std::cout << "=== Cat 1 ===" << std::endl;
 	cat1->printIdeas();
-	cat1->addIdea("Wake up");
-	cat1->addIdea("Play");
-	cat1->addIdea("Eat fish");
+	cat1->addIdea(1, "Wake up");
+	cat1->addIdea(2, "Play");
+	cat1->addIdea(42, "Eat fish");
 	std::cout << "=== Cat 1 ===" << std::endl;
 	cat1->printIdeas();
 	std::cout << std::endl;
@@ -38,7 +38,7 @@ int main()
 	std::cout << std::endl;
 	std::cout << "replace last idea" << std::endl << std::endl;
 	cat2->popIdea();
-	cat2->addIdea("Eat cat food");
+	cat2->addIdea(42, "Eat cat food");
 	std::cout << "=== Cat 2 ===" << std::endl;
 	cat2->printIdeas();
 	std::cout << "=== Cat 1 ===" << std::endl;

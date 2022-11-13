@@ -6,7 +6,7 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 11:20:11 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/11/12 12:57:19 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/11/13 22:42:06 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ class Cat: public Animal
 		virtual ~Cat( void );
 		void makeSound( void ) const;
 		void printIdeas( void ) const;
-		void addIdea( std::string idea );
+		void addIdea( int i, std::string idea );
 		std::string popIdea( void );
 };
 

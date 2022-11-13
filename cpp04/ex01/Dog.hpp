@@ -6,7 +6,7 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 11:05:24 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/11/12 12:18:30 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/11/13 22:41:14 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ class Dog: public Animal
 {
 	private:
 		Brain*	_brain;
+		int		_nb_ideas;
 
 	public:
 		Dog( void );
@@ -29,6 +30,9 @@ class Dog: public Animal
 		Dog& operator=( const Dog& other );
 		virtual ~Dog( void );
 		void makeSound( void ) const;
+		void printIdeas( void ) const;
+		void addIdea( std::string idea );
+		std::string popIdea( void );
 };
 
 #endif /* DOG_HPP */
