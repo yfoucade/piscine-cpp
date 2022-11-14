@@ -16,6 +16,7 @@ ${NAME}: ${OBJ}
 
 clean:
 	${RM} ${OBJ}
+	${RM} ${SRC:.cpp=.d}
 
 fclean: clean
 	${RM} ${NAME}
