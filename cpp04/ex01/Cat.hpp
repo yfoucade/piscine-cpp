@@ -6,7 +6,7 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 11:20:11 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/11/13 22:42:06 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/11/14 10:36:55 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ class Cat: public Animal
 {
 	private:
 		Brain*	_brain;
-		int		_nb_ideas;
 
 	public:
 		Cat( void );
@@ -31,7 +30,6 @@ class Cat: public Animal
 		void makeSound( void ) const;
 		void printIdeas( void ) const;
 		void addIdea( int i, std::string idea );
-		std::string popIdea( void );
 };
 
 #endif /* CAT_HPP */
