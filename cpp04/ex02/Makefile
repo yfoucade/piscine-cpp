@@ -1,6 +1,6 @@
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -MMD
-NAME = brain
+NAME = abstractclass
 SRC = Animal.cpp Brain.cpp Cat.cpp Dog.cpp main.cpp
 OBJ = ${SRC:.cpp=.o}
 
