@@ -6,7 +6,7 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 18:16:12 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/11/14 19:11:40 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/11/14 22:36:28 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,4 +42,4 @@ class Bureaucrat
 		void downGrade( void );
 };
 
-std::ostream& operator<<( std::ostream&, Bureaucrat& );
+std::ostream& operator<<( std::ostream&, const Bureaucrat& );

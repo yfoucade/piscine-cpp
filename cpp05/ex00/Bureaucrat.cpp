@@ -6,7 +6,7 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 18:59:55 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/11/14 19:12:47 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/11/14 22:36:39 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,7 +75,7 @@ void Bureaucrat::downGrade( void )
 	++_grade;
 }
 
-std::ostream& operator<<( std::ostream& out, Bureaucrat& bureaucrat)
+std::ostream& operator<<( std::ostream& out, const Bureaucrat& bureaucrat)
 {
 	out << bureaucrat.getName() << ", bureaucrat grade " << bureaucrat.getGrade() << "." << std::endl;
 	return out;
