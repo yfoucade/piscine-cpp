@@ -6,7 +6,7 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 11:38:52 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/11/15 23:45:47 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/11/16 12:22:31 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 #include "RobotomyRequestForm.hpp"
 
 RobotomyRequestForm::RobotomyRequestForm( std::string target ):
-Form("RobotomyRequestForm", target, 72, 45)
+Form("robotomy request", target, 72, 45)
 {
 	std::cout << "Robotomy constructor called" << std::endl;
 }

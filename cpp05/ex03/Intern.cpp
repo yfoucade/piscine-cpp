@@ -6,7 +6,7 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 10:53:25 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/11/16 11:09:06 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/11/16 12:24:02 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ Intern::~Intern( void )
 Form* Intern::makeForm( std::string name, std::string target )
 {
 	int	idx = -1;
-	std::string names[3] = {"ShrubberyCreationForm", "RobotomyRequestForm", "PresidentialPardonForm"};
+	std::string names[3] = {"shrubbery creation", "robotomy request", "presidential pardon"};
 	for (int i = 0; i < 3; i++)
 		if (!names[i].compare(name))
 			idx = i;

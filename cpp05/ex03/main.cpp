@@ -6,7 +6,7 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 19:20:22 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/11/16 11:41:18 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/11/16 12:24:35 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -164,7 +164,7 @@ void test_intern( void )
 		std::cout << "=====================" << std::endl;
 
 		Intern alice;
-		Form* f = alice.makeForm("ShrubberyCreationForm", "target1");
+		Form* f = alice.makeForm("shrubbery creation", "target1");
 		std::cout << *f;
 		std::cout << std::endl;
 		Bureaucrat b("Bob", 150);
@@ -187,7 +187,7 @@ void test_intern( void )
 		std::cout << "=======================" << std::endl;
 
 		Intern alice;
-		Form* f = alice.makeForm("RobotomyRequestForm", "target1");
+		Form* f = alice.makeForm("robotomy request", "target1");
 		std::cout << *f;
 		std::cout << std::endl;
 		Bureaucrat d("Dave", 1);
@@ -202,7 +202,7 @@ void test_intern( void )
 		std::cout << "==========================" << std::endl;
 
 		Intern alice;
-		Form* f = alice.makeForm("PresidentialPardonForm", "target1");
+		Form* f = alice.makeForm("presidential pardon", "target1");
 		std::cout << *f;
 		std::cout << std::endl;
 		Bureaucrat d("Dave", 1);

@@ -6,7 +6,7 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 19:20:22 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/11/16 00:06:10 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/11/16 12:25:47 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -148,7 +148,7 @@ void test_pardon( void )
 
 int main()
 {
-	// test_shrubbery();
+	test_shrubbery();
 	// test_robotomy();
-	test_pardon();
+	// test_pardon();
 }

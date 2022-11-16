@@ -6,7 +6,7 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 11:38:52 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/11/15 22:46:37 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/11/16 12:22:01 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 #include "ShrubberyCreationForm.hpp"
 
 ShrubberyCreationForm::ShrubberyCreationForm( std::string target ):
-Form("ShrubberyCreationForm", target, 145, 137)
+Form("shrubbery creation", target, 145, 137)
 {
 	std::cout << "Shrubbery constructor called" << std::endl;
 }

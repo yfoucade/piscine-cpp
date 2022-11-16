@@ -6,7 +6,7 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 11:38:52 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/11/16 00:04:44 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/11/16 12:22:43 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 #include "PresidentialPardonForm.hpp"
 
 PresidentialPardonForm::PresidentialPardonForm( std::string target ):
-Form("PresidentialPardonForm", target, 25, 5)
+Form("presidential pardon", target, 25, 5)
 {
 	std::cout << "Presidential constructor called" << std::endl;
 }
