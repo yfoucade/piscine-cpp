@@ -1,6 +1,6 @@
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -MMD
-NAME = forms
+NAME = intern
 SRC = \
 	Bureaucrat.cpp \
 	ShrubberyCreationForm.cpp \
