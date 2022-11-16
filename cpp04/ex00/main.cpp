@@ -6,7 +6,7 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 10:52:32 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/11/11 00:52:00 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/11/16 10:28:08 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,9 @@ int main()
 	std::cout << "===  Wrong  Cat  ===" << std::endl;
 	std::cout << "====================" << std::endl;
 	const WrongAnimal *i2 = new WrongCat();
+	const WrongCat *i3 = new WrongCat();
 	i2->makeSound();
+	i3->makeSound();
 	std::cout << std::endl;
 
 	delete meta;
