@@ -6,7 +6,7 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 21:50:27 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/11/15 11:26:49 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/11/16 11:14:47 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ class Form
 		Form( std::string, std::string, int, int );
 		Form( const Form& );
 		Form& operator=( const Form& );
-		~Form();
+		virtual ~Form();
 		std::string getName( void ) const;
 		std::string getTarget( void ) const;
 		bool getIsSigned( void ) const;
