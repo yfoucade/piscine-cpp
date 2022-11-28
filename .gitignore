@@ -29,6 +29,7 @@ brain
 bureaucrat
 test*
 forms
-convert
 abstractclass
 maggots
+convert
+serialization
