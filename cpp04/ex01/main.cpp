@@ -6,7 +6,7 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 10:52:32 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/11/14 10:47:49 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/11/16 10:31:30 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,6 +82,10 @@ int main()
 	for (int i = 0; i < 4; i++)
 		delete tab[i];
 
+	std::cout << std::endl;
+
+	Animal a;
+	
 	std::cout << std::endl;
 	
 	return 0;
