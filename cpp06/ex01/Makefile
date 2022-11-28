@@ -1,6 +1,6 @@
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -MMD
-NAME = convert
+NAME = serialization
 SRC = Data.cpp main.cpp
 OBJ = ${SRC:.cpp=.o}
 
