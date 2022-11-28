@@ -6,7 +6,7 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/28 15:55:01 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/11/28 16:39:24 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/11/28 16:44:10 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,32 +44,32 @@ Base	*generate( void )
 void	identify( Base* p )
 {
 	if (dynamic_cast<A*>(p))
-		std::cout << "Found type A ";
+		std::cout << "Found type A";
 	if (dynamic_cast<B*>(p))
-		std::cout << "Found type B ";
+		std::cout << "Found type B";
 	if (dynamic_cast<C*>(p))
-		std::cout << "Found type C ";
-	std::cout << "using pointer" << std::endl;
+		std::cout << "Found type C";
+	std::cout << " using pointer" << std::endl;
 }
 
 void	identify( Base& p )
 {
 	try{
 		dynamic_cast<A&>(p);
-		std::cout << "Found type A ";
+		std::cout << "Found type A";
 	}catch(std::exception &c){}
 
 	try{
 		dynamic_cast<B&>(p);
-		std::cout << "Found type B ";
+		std::cout << "Found type B";
 	}catch(std::exception &c){}
 
 	try{
 		dynamic_cast<C&>(p);
-		std::cout << "Found type C ";
+		std::cout << "Found type C";
 	}catch(std::exception &c){}
 	
-	std::cout << "using reference" << std::endl;
+	std::cout << " using reference" << std::endl;
 }
 
 int main( void )
