@@ -6,7 +6,7 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/29 13:29:56 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/11/29 13:36:38 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/12/01 14:32:46 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,6 @@ float Point::getY( void ) const { return _y; }
 
 std::ostream& operator<<( std::ostream& o, const Point& point )
 {
-	o << "(" << point.getX() << ", " << point.getY() << ")" << std::endl;
+	o << "(" << point.getX() << ", " << point.getY() << ")";
 	return o;
 }
