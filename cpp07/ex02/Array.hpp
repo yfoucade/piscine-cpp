@@ -6,7 +6,7 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/29 14:03:16 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/12/02 11:24:35 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/12/02 11:36:01 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,9 @@ class Array
 		T* _tab;
 
 	public:
-		Array( void ): _size(0), _tab(new T[0]) {}
-		Array( unsigned int n ): _size(n), _tab(new T[n]){}
-		Array( const Array& other ): _size(other._size), _tab(new T[other._size])
+		Array( void ): _size(0), _tab(new T[0]()) {}
+		Array( unsigned int n ): _size(n), _tab(new T[n]()){}
+		Array( const Array& other ): _size(other._size), _tab(new T[other._size]())
 		{
 			for (unsigned int i = 0; i < other._size; i++)
 				_tab[i] = other._tab[i];
