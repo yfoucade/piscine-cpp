@@ -6,7 +6,7 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/29 14:03:02 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/11/29 14:17:58 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/12/02 11:32:38 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,5 +62,17 @@ int main(int, char**)
         numbers[i] = rand();
     }
     delete [] mirror;//
+
+	long a = -2147483648;
+	long b = a + 10;
+	Array<float> f(a+b);
+	try{
+		f[9] = -1;
+		f[10] = 42;
+	}
+	catch(const std::exception& e){
+		std::cout << e.what() << '\n';
+	}
+	std::cout << f[0] << " ... " << f[8] << " " << f[9] << '\n';
     return 0;
 }
