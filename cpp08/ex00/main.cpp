@@ -6,7 +6,7 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/30 17:26:58 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/12/02 12:10:58 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/12/05 14:59:19 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,29 @@ void	run_test( T& container, int val )
 	}
 }
 
+template <typename T>
+void	run_test( const T& container, const int val )
+{
+	typename T::const_iterator ret;
+	try{
+		ret = easyfind(container, val);
+	}
+	catch(std::exception &e){
+		std::cout << e.what() << " Empty container" << std::endl;
+		return;
+	}
+	
+	if (ret == container.end())
+	{
+		std::cout << "Did not find value " << val << " in container" << std::endl;
+	}
+	else
+	{
+		std::cout << "Found value " << val << " at position ";
+		std::cout << std::distance(container.begin(), ret) << std::endl;
+	}
+}
+
 int main()
 {
 	{
@@ -52,7 +75,7 @@ int main()
 			std::cout << "=== Empty vector ===" << std::endl;
 			std::cout << std::endl;
 			
-			std::vector<int> a;
+			const std::vector<int> a;
 			run_test(a, -1);
 			run_test(a, 0);
 			run_test(a, 1024);
@@ -62,7 +85,7 @@ int main()
 			std::cout << "=== Size 1 vector ===" << std::endl;
 			std::cout << std::endl;
 
-			std::vector<int> a(1, 42);
+			const std::vector<int> a(1, 42);
 			run_test(a, -1);
 			run_test(a, 0);
 			run_test(a, 42);
