@@ -6,7 +6,7 @@
 /*   By: yfoucade <yfoucade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/02 16:32:08 by yfoucade          #+#    #+#             */
-/*   Updated: 2022/12/02 18:59:14 by yfoucade         ###   ########.fr       */
+/*   Updated: 2022/12/05 15:21:45 by yfoucade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 
 int using_list()
 {
+	std::cout << "Using std::list<int>\n";
 	std::list<int> mstack;
 	mstack.push_back(5);
 	mstack.push_back(17);
@@ -41,6 +42,7 @@ int using_list()
 
 int main()
 {
+	std::cout << "Creating Mutant Stack\n";
 	MutantStack<int> mstack;
 	mstack.push(5);
 	mstack.push(17);
@@ -52,18 +54,58 @@ int main()
 	mstack.push(737);
 	//[...]
 	mstack.push(0);
-	MutantStack<int>::iterator it = mstack.begin();
-	MutantStack<int>::iterator ite = mstack.end();
-	++it;
-	--it;
-	while (it != ite)
 	{
-		std::cout << *it << std::endl;
+		MutantStack<int>::iterator it = mstack.begin();
+		MutantStack<int>::iterator ite = mstack.end();
 		++it;
+		--it;
+		while (it != ite)
+		{
+			std::cout << *it << std::endl;
+			++it;
+		}
 	}
-	std::stack<int> s(mstack);
 
 	std::cout << "\n\n";
 	using_list();
+	std::cout << "\n\n";
+
+	{
+		std::cout << "Reverse iterator\n";
+		MutantStack<int> s(mstack);
+		MutantStack<int>::reverse_iterator it = s.rbegin();
+		MutantStack<int>::reverse_iterator ite = s.rend();
+		++it;
+		--it;
+		while (it != ite)
+		{
+			(*it)++;
+			std::cout << *it << std::endl;
+			++it;
+		}
+	}
+
+	std::cout << "\n\n";
+
+	{
+		std::cout << "Const reverse iterator\n";
+		MutantStack<int> s(mstack);
+		MutantStack<int>::const_reverse_iterator it = s.rbegin();
+		MutantStack<int>::const_reverse_iterator ite = s.rend();
+		++it;
+		--it;
+		while (it != ite)
+		{
+			// try{
+			// (*it)++;
+			// }
+			// catch(std::exception& e){
+			// 	std::cout << e.what() << std::endl;
+			// }
+			std::cout << *it << std::endl;
+			++it;
+		}
+	}
+	
 	return 0;
 }
